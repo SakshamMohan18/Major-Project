@@ -1,38 +1,132 @@
-.App {
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Main container */
+.app-container {
+  max-width: 600px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+}
+
+/* Scanned Data Display */
+.scanned-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-left: 5px solid #3498db;
+  background-color: #ecf6fc;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2c3e50;
+  word-break: break-word;
+}
+
+/* Correct option selector */
+.selector-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.selector-section label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.selector-section select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Button styles */
+button {
+  margin-top: 1.5rem;
+  padding: 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #1e8449;
+}
+
+/* Score display */
+.result {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Responsive media queries */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1.5rem 1rem;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .scanned-box {
+    font-size: 1rem;
+  }
+
+  .result {
+    font-size: 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 480px) {
+  .app-container {
+    padding: 1.2rem 0.8rem;
+    width: 95%;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .selector-section label,
+  .selector-section select,
+  button {
+    font-size: 0.95rem;
+  }
+
+  .scanned-box {
+    font-size: 0.95rem;
+  }
+
+  button {
+    padding: 10px;
   }
 }
