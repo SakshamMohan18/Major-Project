@@ -68,3 +68,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Paper Published in IEEE Conference
+this section has moved here: [https://ieeexplore.ieee.org/document/11465363/authors#authors](https://ieeexplore.ieee.org/document/11465363/authors#authors)
